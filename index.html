@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Expert Orthopaedic Opinion in Bengaluru | Book a Consultation – OrthoNow</title>
+<meta name="description" content="Knee or back pain? Get an expert orthopaedic opinion at OrthoNow. 9 clinics across Bengaluru, Hyderabad and Chennai. Same-day consultations available." />
+<meta name="theme-color" content="#0b4f6c" />
+<link rel="canonical" href="https://orthonow.example/book" />
+
+
+
+<style>
+  :root{
+    --ink:#0b1f2a;
+    --ink-soft:#3a4a55;
+    --bg:#f6f8fa;
+    --card:#ffffff;
+    --brand:#0b4f6c;
+    --brand-2:#10809b;
+    --accent:#f5a524;
+    --ok:#137a3f;
+    --line:#e4e9ee;
+    --radius:14px;
+    --shadow:0 6px 24px rgba(11,31,42,.08);
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%}
+  a{color:var(--brand)}
+  h1,h2,h3{line-height:1.2;margin:0 0 .5rem}
+  h1{font-size:clamp(1.7rem,4.5vw,2.6rem);letter-spacing:-.01em}
+  h2{font-size:1.25rem}
+  p{margin:0 0 .75rem;color:var(--ink-soft)}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  header{
+    background:#fff;border-bottom:1px solid var(--line);
+    padding:14px 0;position:sticky;top:0;z-index:5;
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--brand);font-size:1.1rem}
+  .logo-mark{width:28px;height:28px;border-radius:8px;background:var(--brand);display:grid;place-items:center;color:#fff;font-weight:800}
+  .call-link{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--brand);text-decoration:none;font-size:.95rem}
+
+
+  .hero{padding:28px 0 12px}
+  .grid{display:grid;gap:22px;grid-template-columns:1fr}
+  @media (min-width:880px){
+    .hero{padding:48px 0 24px}
+    .grid{grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+  }
+
+  .eyebrow{
+    display:inline-block;background:#e6f3f7;color:var(--brand);
+    font-weight:600;font-size:.8rem;padding:6px 10px;border-radius:999px;margin-bottom:14px;
+  }
+  .sub{font-size:1.05rem;color:var(--ink-soft);margin-top:6px;max-width:52ch}
+
+  .bullets{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}
+  .bullets li{display:flex;gap:10px;align-items:flex-start;font-size:.97rem;color:var(--ink)}
+  .check{flex:0 0 22px;height:22px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;font-size:.8rem;margin-top:1px}
+
+
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;box-shadow:var(--shadow);
+  }
+  .card h2{font-size:1.15rem;margin-bottom:4px}
+  .card .muted{font-size:.88rem;color:var(--ink-soft);margin-bottom:14px}
+
+  form{display:grid;gap:12px}
+  label{font-size:.85rem;font-weight:600;color:var(--ink)}
+  .field{display:grid;gap:6px}
+  input,select{
+    font:inherit;color:var(--ink);
+    padding:14px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;
+    width:100%;min-height:48px; 
+    outline:none;transition:border-color .15s, box-shadow .15s;
+  }
+  input:focus,select:focus{border-color:var(--brand-2);box-shadow:0 0 0 3px rgba(16,128,155,.18)}
+  .row{display:grid;gap:12px;grid-template-columns:1fr}
+  @media (min-width:520px){.row{grid-template-columns:1fr 1fr}}
+
+  button.cta{
+    appearance:none;border:0;cursor:pointer;
+    background:var(--accent);color:#1a1300;font-weight:700;font-size:1.05rem;
+    padding:16px 18px;border-radius:12px;min-height:52px;
+    transition:transform .05s ease, filter .15s;
+  }
+  button.cta:hover{filter:brightness(.97)}
+  button.cta:active{transform:translateY(1px)}
+  button.cta[disabled]{opacity:.7;cursor:progress}
+
+  .fineprint{font-size:.78rem;color:var(--ink-soft);margin-top:4px}
+  .error{color:#a4161a;font-size:.85rem;display:none}
+  .error.show{display:block}
+
+
+  .trust{margin-top:28px}
+  .trust-grid{
+    display:grid;gap:14px;grid-template-columns:repeat(2,1fr);
+  }
+  @media (min-width:720px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+  .tile{
+    background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center;
+  }
+  .tile .big{font-size:1.4rem;font-weight:800;color:var(--brand)}
+  .tile .label{font-size:.82rem;color:var(--ink-soft);margin-top:2px}
+
+  .reviews{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+  .stars{color:#f5a524;letter-spacing:2px;font-size:1.05rem}
+  .quote{font-style:italic;color:var(--ink);margin:6px 0 4px}
+  .who{font-size:.85rem;color:var(--ink-soft)}
+
+  footer{padding:30px 0 80px;text-align:center;color:var(--ink-soft);font-size:.82rem}
+
+
+  .thanks{display:none;text-align:center;padding:12px 4px}
+  .thanks.show{display:block}
+  .thanks .ok{
+    width:56px;height:56px;border-radius:50%;background:var(--ok);color:#fff;
+    display:grid;place-items:center;margin:4px auto 12px;font-size:1.6rem
+  }
+  .thanks h2{color:var(--ok)}
+  form.hide{display:none}
+
+
+  .sticky-call{
+    position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);
+    padding:10px 16px;display:flex;gap:10px;z-index:10;
+  }
+  .sticky-call a{
+    flex:1;text-align:center;padding:14px;border-radius:10px;font-weight:700;text-decoration:none;
+    min-height:48px;display:flex;align-items:center;justify-content:center;
+  }
+  .sticky-call .call{background:var(--brand);color:#fff}
+  .sticky-call .form-jump{background:var(--accent);color:#1a1300}
+  @media (min-width:880px){.sticky-call{display:none}}
+</style>
+</head>
+<body>
+
+<script>window.dataLayer = window.dataLayer || [];</script>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">
+      <div class="logo-mark" aria-hidden="true">O</div>
+      <span>OrthoNow</span>
+    </div>
+
+    <a class="call-link" href="tel:+918000000000"
+       onclick="window.dataLayer.push({event:'click_call', source:'header', page_type:'landing_page'})">
+      &#9742; +91 80000 00000
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="grid">
+      <div>
+        <span class="eyebrow">Bengaluru &middot; Same-day appointments</span>
+        <h1>Knee or back pain slowing you down? Get an expert orthopaedic opinion.</h1>
+        <p class="sub">
+          Book a consultation with a senior orthopaedic specialist at OrthoNow.
+          Honest diagnosis, non-surgical options first, and a clear plan you can act on.
+        </p>
+
+        <ul class="bullets" aria-label="Why patients choose OrthoNow">
+          <li><span class="check" aria-hidden="true">&#10003;</span> Consultations from senior specialists with 12+ years of experience</li>
+          <li><span class="check" aria-hidden="true">&#10003;</span> Non-surgical treatment options explored first</li>
+          <li><span class="check" aria-hidden="true">&#10003;</span> 9 clinics across Bengaluru, Hyderabad &amp; Chennai – one close to you</li>
+          <li><span class="check" aria-hidden="true">&#10003;</span> Transparent pricing, no hidden tests</li>
+        </ul>
+      </div>
+
+      <aside class="card" id="bookCard" aria-labelledby="bookHeading">
+        <div id="formState">
+          <h2 id="bookHeading">Book your consultation</h2>
+          <p class="muted">Takes 20 seconds. We&rsquo;ll call you back within 15 minutes.</p>
+
+          <form id="consultForm" novalidate>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required placeholder="e.g. Rahul Sharma" />
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel"
+                     pattern="[0-9+ ]{10,14}" required placeholder="10-digit mobile number" />
+              <span class="error" id="phoneErr">Please enter a valid 10-digit phone number.</span>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="clinic">Preferred clinic</label>
+                <select id="clinic" name="clinic" required>
+                  <option value="">Select clinic</option>
+                  <option>Indiranagar, Bengaluru</option>
+                  <option>Koramangala, Bengaluru</option>
+                  <option>Whitefield, Bengaluru</option>
+                  <option>HSR Layout, Bengaluru</option>
+                  <option>Jubilee Hills, Hyderabad</option>
+                  <option>Banjara Hills, Hyderabad</option>
+                  <option>Gachibowli, Hyderabad</option>
+                  <option>Anna Nagar, Chennai</option>
+                  <option>Velachery, Chennai</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="pain">Main concern</label>
+                <select id="pain" name="pain_area" required>
+                  <option value="">Select concern</option>
+                  <option>Knee pain</option>
+                  <option>Back pain</option>
+                  <option>Neck / shoulder</option>
+                  <option>Sports injury</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="cta" id="submitBtn">Book my consultation &rarr;</button>
+            <p class="fineprint">By submitting, you agree to be contacted by OrthoNow about your enquiry. We never share your details.</p>
+          </form>
+        </div>
+
+        <div class="thanks" id="thanks" role="status" aria-live="polite">
+          <div class="ok" aria-hidden="true">&#10003;</div>
+          <h2>Thank you, <span id="thxName">there</span>!</h2>
+          <p>Your consultation request is in. Our care team will call you on
+             <strong id="thxPhone"></strong> within 15 minutes to confirm your slot at
+             <strong id="thxClinic"></strong>.</p>
+          <p class="fineprint">Reference ID: <span id="refId"></span></p>
+        </div>
+      </aside>
+    </div>
+
+    <section class="trust" aria-label="Trust signals">
+      <div class="trust-grid">
+        <div class="tile"><div class="big">9</div><div class="label">Clinics across 3 cities</div></div>
+        <div class="tile"><div class="big">40k+</div><div class="label">Patients treated</div></div>
+        <div class="tile"><div class="big">4.8&#9733;</div><div class="label">Avg. Google rating</div></div>
+        <div class="tile"><div class="big">12+ yrs</div><div class="label">Avg. specialist experience</div></div>
+      </div>
+
+      <div class="reviews">
+        <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="quote">&ldquo;I was told I needed knee surgery elsewhere. OrthoNow tried physiotherapy first &mdash; six weeks later I&rsquo;m back to running. Honest doctors.&rdquo;</p>
+        <p class="who">&mdash; Priya N., 38, Indiranagar patient</p>
+      </div>
+    </section>
+  </section>
+</main>
+
+<footer>
+  &copy; <span id="yr"></span> OrthoNow Clinics &middot; Bengaluru &middot; Hyderabad &middot; Chennai
+</footer>
+
+
+<div class="sticky-call" aria-hidden="false">
+  <a class="call" href="tel:+918000000000"
+     onclick="window.dataLayer.push({event:'click_call', source:'sticky_mobile', page_type:'landing_page'})">Call now</a>
+  <a class="form-jump" href="#bookCard">Book online</a>
+</div>
+
+<script>
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var form     = document.getElementById('consultForm');
+  var btn      = document.getElementById('submitBtn');
+  var phoneEl  = document.getElementById('phone');
+  var phoneErr = document.getElementById('phoneErr');
+  var formWrap = document.getElementById('formState');
+  var thanks   = document.getElementById('thanks');
+
+
+  function validPhone(v){
+    var digits = (v || '').replace(/\D/g,'');
+    return digits.length >= 10 && digits.length <= 13;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+
+    if (!validPhone(phoneEl.value)) {
+      phoneErr.classList.add('show');
+      phoneEl.focus();
+      return;
+    }
+    phoneErr.classList.remove('show');
+
+    var data = {
+      name:   document.getElementById('name').value.trim(),
+      phone:  phoneEl.value.trim(),
+      clinic: document.getElementById('clinic').value,
+      pain:   document.getElementById('pain').value
+    };
+
+    var refId = 'ON-' + Date.now().toString(36).toUpperCase();
+
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+
+    window.dataLayer.push({
+      event: 'consultation_form_submitted',
+      form_name: 'lp_book_consultation',
+      clinic_preference: data.clinic,
+      pain_area: data.pain,
+      lead_reference_id: refId,
+      page_type: 'landing_page',
+      campaign: 'gads_consultation_lp'
+    });
+
+    document.getElementById('thxName').textContent   = data.name || 'there';
+    document.getElementById('thxPhone').textContent  = data.phone;
+    document.getElementById('thxClinic').textContent = data.clinic;
+    document.getElementById('refId').textContent     = refId;
+
+    form.classList.add('hide');
+    thanks.classList.add('show');
+    thanks.scrollIntoView({behavior:'smooth', block:'center'});
+  });
+</script>
+</body>
+</html>
